@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: clamp(280px, 80vw, 600px);
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 10px;
+  padding: clamp(16px, 5vw, 40px);
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+.profile-image {
+  width: 30%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+.name {
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin: 10px 0;
+}
+.location {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 30px;
+}
+.bio {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+.social-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  padding: clamp(8px, 2vw, 12px);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.social-links a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+}
+.attribution { font-size: 11px; text-align: center; color: white; margin-top: 20px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 450px;
+    padding: 40px;
+  }
+}
